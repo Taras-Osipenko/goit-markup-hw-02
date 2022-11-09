@@ -1,16 +1,31 @@
+:root {
+    --accent-color: #2196F3;
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+}
+
 body {
     font-family: "Roboto","sans-serif"
 }
-/* logo */
+/* Header */
 .logo {
 
+text-decoration: none;
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 31px;
-
 letter-spacing: 0.03em;
     
 color: #2196F3;
+}
+
+.logo>span {
+color: black;
+}
+.nav-list,
+.contact-list,
+.contact-list item {
+    text-decoration: none;
 }
