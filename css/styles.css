@@ -33,22 +33,22 @@ font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
     
-color: #2196F3;
+color: var(--accent-color);
 }
 
 .logo>span {
-color: var(--secondary-text-color);
+color: var(--secondary-logo-color);
 }
 
-.nav-list .item,
-.contact-list .item {
+.nav-list.item,
+.contact-list.item {
 text-decoration: none;
 font-weight: 500;
 font-size: 14px;
-line-height: 1,14;
+line-height: 1.14;
 letter-spacing: 0.02em;
     
 color: var(--main-text-color);
@@ -57,14 +57,12 @@ color: var(--main-text-color);
 .nav-list.item:hover,
 .contact-list.item:hover,
 .nav-list.item:focus,
-.contact-list.item:focus
+.contact-list.item:focus,
+.nav-list.item.current
 { 
 color: var(--accent-color)
 }
 
-.nav-list.item.current {
-    color: var(--accent-color);
-}
 /* -------------------Hero------------------ */
 
 
@@ -103,17 +101,17 @@ color: var(--accent-color)
 /* ---Візуально приховую заголовок--- */
 .benefits-title {
     
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
     }
 
 .benefits-list.title {
@@ -203,4 +201,70 @@ footer .part-logo {
 color: rgba(255, 255, 255, 0.6);
 }
 
-/* ----------------------INDEX-HTML----------------- */
+/* ----------------------PORTFOLIO-HTML----------------- */
+/* ----------------------Portfolio----------------- */
+/* ---Роблю заголовок візуально схованим--- */
+.portfolio-title {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--main-text-color);
+    background: #F5F4FA;
+
+    border: none;
+}
+.btn.current,
+.btn:hover,
+.btn:focus {
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    background: var(--accent-color);
+}
+.portfolio-list.title {
+    font-size: 18px;
+    line-height: 2;
+        
+    letter-spacing: 0.06em;
+    
+    color: var(--main-text-color);
+   }
+
+   .portfolio-list.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+       
+    letter-spacing: 0.03em;
+    
+    color: var(--secondary-text-color);
+   }
