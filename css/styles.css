@@ -4,14 +4,23 @@
 :root {
     --accent-color: #2196F3;
     --main-text-color: #212121;
-    --secondary-text-color: #757575;
-    --secondary-logo-color: #000000;
-    --main-background-color: #2F303A;
+    --second-text-color: #757575;
+    --second-logo-color: #000000;
+    --main-background-color: #FFFFFF;
+    --second-background-color: #2F303A;
+    --active-btn-color: #188CE8;
+    --address-text-color: rgba(255, 255, 255, 0.6);
+    --btn-background-color: #F5F4FA;
 }
 
 body {
-    font-family: "Roboto","sans-serif"
-    
+    font-family: "Roboto","sans-serif";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background: var(--main-background-color);
+    color: var(--second-text-color);
 }
 .nav-list,
 .contact-list,
@@ -29,18 +38,18 @@ body {
 .logo {
 
 text-decoration: none;
-font-family: 'Raleway';
-font-style: normal;
+font-family: 'Raleway',"sans-serif";
+
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
+
     
 color: var(--accent-color);
 }
 
 .logo>span {
-color: var(--secondary-logo-color);
+color: var(--second-logo-color);
 }
 
 .nav-list.item,
@@ -67,7 +76,7 @@ color: var(--accent-color)
 
 
 .hero {
-    background: var(--main-background-color);
+    background: var(--second-background-color);
 }
 .hero-title {
 
@@ -79,7 +88,7 @@ color: var(--accent-color)
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--main-background-color);
 
 }
 
@@ -88,15 +97,16 @@ color: var(--accent-color)
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-      
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     
     background: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--main-background-color);
 }
+.order-btn:hover,
+.order-btn:focus {
+    background: var(--active-btn-color);
+}
+
 /* -------------------Benefits------------------ */
 /* ---Візуально приховую заголовок--- */
 .benefits-title {
@@ -124,14 +134,7 @@ color: var(--accent-color)
 }
 
 .benefits-list.text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-   
-    
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-
+  ;
 }
 /* -------------------which-do------------------ */
 .which-do-title {
@@ -144,6 +147,11 @@ color: var(--accent-color)
 }
 
 /* -------------------our-command------------------ */
+
+.our-command{
+    background: var(--btn-background-color);
+}
+
 
 .our-command-title {
     font-size: 36px;
@@ -165,40 +173,45 @@ color: var(--accent-color)
     color: var(--main-text-color);
  }
 .our-command-text {
-    font-weight: 400;
-     font-size: 16px;
+    font-size: 16px;
     line-height: 1.19;
      
     text-align: center;
     letter-spacing: 0.03em;
     
-    color: var(--secondary-text-color);
+    color: var(--second-text-color);
 }
 /* -------------------Foter------------------ */
 footer {
-    background: var(--main-background-color);
+    background: var(--second-background-color);
 }
 
 footer .part-logo {
-    color: #FFFFFF;
+    color: var(--main-background-color);
 }
 .address-list.adress,
 .address-list.mail,
 .address-list.tel {
+
     font-style: normal;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-   
-    letter-spacing: 0.03em;
-    
-    color: #FFFFFF;
+       
+    color: var(--main-background-color);
 }
+ .address-list.adress:hover, 
+ .address-list.mail:hover,
+ .address-list.tel:hover,
+ .address-list.adress:focus,
+ .address-list.mail:focus,
+ .address-list.tel:focus
+ {
+    color: var(--accent-color);
+ }
+
 .address-list.mail,
 .address-list.tel {
     
-color: rgba(255, 255, 255, 0.6);
+color: var(--address-text-color);
 }
 
 /* ----------------------PORTFOLIO-HTML----------------- */
@@ -206,16 +219,16 @@ color: rgba(255, 255, 255, 0.6);
 /* ---Роблю заголовок візуально схованим--- */
 .portfolio-title {
     position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
     
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
     
 }
 
@@ -230,24 +243,16 @@ color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
     
     color: var(--main-text-color);
-    background: #F5F4FA;
+    background: var(--btn-background-color);
 
     border: none;
 }
 .btn-list.btn.current,
 .btn-list.btn:hover,
-.btn-list.btn:focus {
+.btn-list.btn:focus,
+.btn-list.btn:active {
     
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
-
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #FFFFFF;
+    color: var(--main-background-color);
     background: var(--accent-color);
 }
 .portfolio-list.title {
@@ -260,11 +265,10 @@ color: rgba(255, 255, 255, 0.6);
    }
 
    .portfolio-list.text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
        
     letter-spacing: 0.03em;
     
-    color: var(--secondary-text-color);
+    color: var(--second-text-color);
    }
