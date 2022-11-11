@@ -11,6 +11,7 @@
     --active-btn-color: #188CE8;
     --address-text-color: rgba(255, 255, 255, 0.6);
     --btn-background-color: #F5F4FA;
+    --bg-portfolio-list-item: #EEEEEE;
 }
 
 body {
@@ -217,6 +218,11 @@ color: var(--address-text-color);
 /* ----------------------PORTFOLIO-HTML----------------- */
 /* ----------------------Portfolio----------------- */
 /* ---Роблю заголовок візуально схованим--- */
+.portfolio-list.item {
+    background: var(--bg-portfolio-list-item);
+}
+
+
 .portfolio-title {
     position: absolute;
     width: 1px;
