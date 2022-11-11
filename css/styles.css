@@ -63,6 +63,8 @@ letter-spacing: 0.02em;
     
 color: var(--main-text-color);
 }
+.contact-list.item {
+    color: var(--second-text-color);}
 
 .nav-list.item:hover,
 .contact-list.item:hover,
@@ -102,6 +104,7 @@ color: var(--accent-color)
     
     background: var(--accent-color);
     color: var(--main-background-color);
+    cursor: pointer;
 }
 .order-btn:hover,
 .order-btn:focus {
@@ -218,8 +221,7 @@ color: var(--address-text-color);
 /* ----------------------PORTFOLIO-HTML----------------- */
 /* ----------------------Portfolio----------------- */
 /* ---Роблю заголовок візуально схованим--- */
-.portfolio-list.item {
-    background: var(--bg-portfolio-list-item);
+
 }
 
 
@@ -250,14 +252,15 @@ color: var(--address-text-color);
     
     color: var(--main-text-color);
     background: var(--btn-background-color);
-
+    cursor: pointer;
     border: none;
 }
 .btn-list.btn.current,
 .btn-list.btn:hover,
 .btn-list.btn:focus,
 .btn-list.btn:active {
-    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
     color: var(--main-background-color);
     background: var(--accent-color);
 }
